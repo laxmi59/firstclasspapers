@@ -1,0 +1,70 @@
+<?php 
+$sidenav=2;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<?php include_once("includes/header.php"); ?>
+  <div class="content mt10">
+<?php include_once("includes/sidenav.php"); ?>
+    <div class="content-area sbox rcr-top "><strong> </strong>
+      <ul>
+        <li class="widget sbox ">
+          <h2>Order now</h2>
+          <ul >
+            <li>
+              <div class="step3"></div>
+            </li>
+            <li>
+              <ul class="ordernow order-details">
+                <li>
+                  <h2> Order Details</h2>
+                  <div class="formbox rcr-bot">
+                    <ul class=""> 
+                      <li><label>Topic <span>:</span></label><span>Lorem Ipsum Dolor</span></li>  
+                      <li><label>Type of document  <span>:</span></label><span>Essay</span></li>  
+                      <li><label>Urgency <span>:</span></label><span>3Days</span></li>  
+                      <li><label>Writer level <span>:</span></label><span>Undergraduate</span></li>  
+                      <li><label>Spacing  <span>:</span></label><span>Double Spaced</span></li>  
+                      <li><label>Number of pages <span>:</span></label><span>5</span></li>  
+                      <li><label>Currency <span>:</span></label><span>USD</span></li>  
+                      <li><label>Cost per page <span>:</span></label><span>21.99</span></li>  
+                      <li><label>Subject area <span>:</span></label><span>Biology</span></li>  
+                      <li><label>Academic level <span>:</span></label><span>Undergraduate</span></li>  
+                      <li><label>Style  <span>:</span></label><span>APA</span></li>  
+                      <li><label>Number of sources <span>:</span></label><span>3</span></li>  
+                      <li><label>Total Cost <span>:</span></label><span>109.95</span></li>   
+                    </ul>
+					<div class="hline vm0"></div>
+                  </div> <div class="billing-details">
+				  <h2> Billing Details</h2>
+                  <div class="formbox rcr-bot">
+                    <ul class=""> 
+                      <li><label>Card number <span>:</span></label><span><input name="" type="text" class="w306"><span class="credit-cards">We accept</span></span></li>  
+                      <li><label>Expiration date <span>:</span></label><span> <select name="" class="w77"><option>Month</option></select><select name="" class="w77 ml30"><option>Year</option></select><span class="cvv">CVV  :</span><input name="" type="text" class="w77"></span></li>  
+                      <li><label>Cardholder first name <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li><label>Cardholder last name <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li><label>Billing address <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li><label>City/Town <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li><label>Country <span>:</span></label><span> <select name="" class="w306"><option>Month</option></select></span></li>  
+                      <li><label>State/Province <span>:</span></label><span> <select name="" class="w306"><option>Month</option></select></span></li>  
+                      <li><label>ZIP/Postal code <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li><label>Cardholder phone number <span>:</span></label><span><input name="" type="text" class="w306"></span></li>  
+                      <li> <p class="visa-pic">If your card is eligible or enorlled in Verified by <strong>Visa</strong> or <strong>MasterCard SecureCode</strong> payer authentication programs, your Card Issuer may prompt you for your payer authentication password after you click Submit Order</p>.</li>   
+                    </ul>
+                  </div> </div>
+                </li>
+              </ul> 
+              <input type="button" value="Submit Order" class="submit-order-btn">
+            </li>
+          </ul>
+        </li>
+        <li> </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+<?php include_once("includes/footer.php"); ?>

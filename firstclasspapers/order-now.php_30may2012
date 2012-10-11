@@ -1,0 +1,220 @@
+<?php
+include "includes/functions.php";
+$obj=new firstClassPapers();
+$sidenav=2;
+if($_POST['orderSubmit1']){
+    $msg= $obj->executeOrderForm1($_POST);
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<script type="text/javascript" src="js/valid.js"></script>
+<?php include_once("includes/header.php"); ?>
+  <div class="content mt10">
+<?php include_once("includes/sidenav.php"); ?>
+    <div class="content-area sbox rcr-top "><strong> </strong>
+      <ul>
+        <li class="widget sbox ">
+          <h2>Order now</h2>
+          <ul >
+            <li>
+              <div class="step1"></div>
+            </li>
+            <li>
+                <form method="post" onSubmit="return ordernowvalidate(this)">
+              <ul class="ordernow">
+                <li>
+                  <h2> Personal Info</h2>
+                  <div class="formbox rcr">
+                    <ul>
+                      <li class="col2">
+                        <label>First Name <span>*</span></label>
+                        <input name="first_name" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Last Name <span>*</span></label>
+                        <input name="last_name" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Email <span>*</span></label>
+                        <input name="email" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Re-type email <span>*</span></label>
+                        <input name="remail" type="text" class="w177">
+                      </li>
+                      <li>
+                        <label>Country Code <span>*</span></label>
+                        <select name="country" class="w498">
+                            <option value="">Select</option>
+                            <option value="india">India</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Contact Number <span>*</span></label>
+                        <input name="country_code" type="text" class="w89">
+                        <input name="area_code" type="text" class="w89 ml10">
+                        <input name="phnumber" type="text" class="w182 ml10">
+                        <select name="phone_type" class="w105 ml10">
+                          <option value="">Select</option>
+                          <option value="1">Mobile</option>
+                          <option value="2">Land</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        (&nbsp; country code&nbsp;)  - (   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;area code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) - (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    number                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        Valid phone number where you can be reached is required.</li>
+                    </ul>
+                  </div>
+                  <h2>Order Confirmation</h2>
+                  <div class="formbox rcr">
+                    <ul class="col-one">
+                      <li>
+                        <label>Topic : <span>*</span></label>
+                        <input name="topic" type="text" class="w282">
+                      </li>
+                      <li>
+                        <label>Type of Document :</label>
+                        <select name="doc_type" class="w366">
+                            <option value="">Select</option>
+                            <option value="1">doc1</option>
+                            <option value="2">doc2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Urgency :</label>
+                        <select name="order_priorty" class="w234">
+                            <option value="">Select</option>
+                            <option value="1">Urjent</option>
+                            <option value="2">Normal</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Writer level :</label>
+                        <select name="writer_level">
+                            <option value="">Select</option>
+                          <option>Undergraduate</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Spacing :</label>
+                       <!--<span class="ml20"> 
+                           <span class="tab-active">Double Spaced</span>
+                           <span class="tab">Single Spaced</span>                         
+                       </span>--> 
+                        <table><tr>
+                                <td><input type="radio" name="spacing" value="1">Double Spaced</td>
+                                <td><input type="radio" name="spacing" value="2">Single Spaced</td>
+                        </tr></table>
+                      </li>
+                      <li>
+                        <label>Number of pages/words :<span>*</span></label>
+                        <select name="page_count" class="w366">
+                          <option>Select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </li>
+                      <li> ( approximately 275 words per page )</li>
+                      <li>
+                        <label>Currency </label>
+                        <!--<span class="ml20">
+                            <span class="tab-active">USD</span>
+                            <span class="tab">EUR</span>
+                            <span class="tab">GBP</span>
+                            <span class="tab">AUD</span>
+                        </span>-->
+                        <table><tr>
+                                <td><input type="radio" name="currency" value="1">USD</td>
+                                <td><input type="radio" name="currency" value="2">EUR</td>
+                                <td><input type="radio" name="currency" value="3">GBP</td>
+                                <td><input type="radio" name="currency" value="4">AUD</td>
+                        </tr></table>
+                      </li>
+                      <li>
+                        <label> Cost per page :</label>
+                        <span class="price2">$ 21.99</span></li>
+                      <li>
+                        <label>1 Page summery of your paper :</label>
+                        <input name="paper_summery" type="checkbox">
+                        <span class="price">$ 26.99 </span><a href="#" class="help-icon"></a></li>
+                      <li>
+                        <label>Subject area :<span>*</span></label>
+                        <select name="subject_area" class="w366">
+                            <option value="">Select</option>
+                          <option value="subject1">Subject1 </option>
+                          <option value="subject2">Subject2 </option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Total </label> <span class="price2">$ 21.99 </span><a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Academic level :</label>
+                        <select name="academic_level" class="w133">
+                          <option>Select</option>
+                          <option value="1">level1</option>
+                          <option value="2">level2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Style :</label>
+                        <select name="ordernow_style" class="w133">
+                            <option value="">Select</option>
+                          <option>APA</option>
+                        </select><a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Number of sources/references :</label>
+                        <select name="source_ref" class="w88">
+                            <option value="">Select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> <a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Order description : <span>*</span> <span class="note">(Type your instructions here)</span></label>
+                        <textarea name="order_desc" cols="" rows=""  class="w422 h122"></textarea>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2>Discount</h2>
+                  <div class="formbox rcr">
+                    <ul class="col-one">
+                      <li>
+                        <label>Discount code :</label>
+                        <input type="text" name="discount_code" class="w215">
+                      </li>
+                      <li>
+                        <label>&nbsp;</label>
+                      <span class="note2">Please, be aware that membership discounts are not applied to orders under $30.00</span> </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        <input name="terms_conditions" type="radio" value="">
+                        <span class="input">I accept <a href="#">Terms and Conditions</a></span> </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        <input name="terms_conditions" type="radio" value="">
+                        <span class="input"> I do not accept Terms and Conditions </span></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <input type="submit" value="Confirm Your Order" name="orderSubmit1" class="confirmYourOrder">
+                </form>
+            </li>
+          </ul>
+        </li>
+        <li> </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+<?php include_once("includes/footer.php"); ?>

@@ -1,0 +1,61 @@
+<?php 
+$sidenav=2;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<?php include_once("includes/header.php"); ?>
+  <div class="content mt10">
+<?php include_once("includes/sidenav.php"); ?>
+    <div class="content-area sbox rcr-top "><strong> </strong>
+      <ul>
+        <li class="widget sbox order-receipt">
+          <h2>Thank You !</h2>
+          <ul >
+            <li> 
+			<h3>Thank You for your order.  
+			<BR>We greatly appreciate your business !</h3>
+            </li>
+		 <li> 
+			<h4>Here is your order summery :</h4>
+            </li>
+            <li>
+              <ul class="ordernow ">
+                <li> 
+                  <div class="formbox rcr-bot">
+                    <ul class=""> 
+                      <li><label>Order No. </label><span>785201</span></li>   
+                      <li><label>Name  </label><span>Eric Wagner</span></li>   
+                      <li><label>Email address  </label><span>eric@live.com</span></li>   
+                      <li><label>Country </label><span>USA</span></li>   
+                      <li><label>Phone number </label><span>860-492-9067</span></li>   
+                      <li><label>Topic </label><span>Lorem Ipsum Dolor</span></li>   
+                      <li><label>Type of document  </label><span>Essay</span></li>   
+                      <li><label>Urgency </label><span>3Days</span></li>   
+                      <li><label>Writer level </label><span>Undergraduate</span></li>   
+                      <li><label>Spacing  </label><span>Double Spaced</span></li>   
+                      <li><label>Number of pages </label><span>5</span></li>   
+                      <li><label>Currency </label><span>USD</span></li>   
+                      <li><label>Cost per page </label><span>21.99</span></li>   
+                      <li><label>Subject area </label><span>Biology</span></li>   
+                      <li><label>Academic level </label><span>Undergraduate</span></li>   
+                      <li><label>Style  </label><span>APA</span></li>   
+                      <li><label>Number of sources </label><span>3</span></li>   
+                      <li><label>Total Cost </label><span>109.95</span></li>   
+
+                    </ul> 
+                  </div> 
+                </li>
+              </ul>  
+            </li>
+          </ul>
+        </li>
+        <li> </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+<?php include_once("includes/footer.php"); ?>

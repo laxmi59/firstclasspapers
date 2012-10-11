@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.pack.js"></script>
+<script type="text/javascript"> 
+    jQuery(document).ready(function($){       
+    
+        $('#jQuery') 
+        .before('<div id="navigator">') 
+        .cycle({ 
+            fx:     'fade', 
+             timeout: 8000,
+            cleartype:  1,
+            pause:      1,
+            pager:  '#navigator' 
+        });      
+		
+ 		$("#navigator a").each(function(i){
+  	 this.id = this.id + "tab" + i; 
+		});
+
+    });        
+</script>
+<script type="text/javascript">
+function hiddenText(iid,val,classname){
+	 document.getElementById(iid).value=val;	  
+}
+
+function displayText(iid,val,classname){
+	if(document.getElementById(iid).value =="")	{
+		  document.getElementById(iid).value=val;
+	}
+}	
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body>
+<div id="main">
+  <header>
+    <div  class="head">
+      <ul>
+        <li class="logo"><a href="#"></a></li>
+        <li class="limited-offer"><span></span></li>
+        <li class="support"><span></span></li>
+      </ul>
+    </div>
+    <nav class="nav" role="navigation">
+      <ul>
+        <li><a href="#">Essay</a></li>
+        <li><a href="#">Research Paper</a></li>
+        <li><a href="#">Term Paper </a></li>
+        <li><a href="#">Dissertation </a></li>
+        <li><a href="#">Coursework </a></li>
+        <li><a href="#">extras</a></li>
+        <li class="social-icons"> <a href="#" class="facebook"></a><a href="#" class="twitter"></a><a href="#" class="googleplus"></a><a href="#" class="rss"></a> </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content mt10">
+    <div class="sidenav sbox rcr-top">
+      <ul>
+        <li class="icon one rcr-top"><a href="aboutus.html"><span></span>About Us </a></li>
+        <li class="icon two active"><a href="ordernow.html"><span></span>Order Now </a></li>
+        <li class="icon three"><a href="contactus.html"><span></span>Contact Us </a></li>
+        <li class="icon four"><a href="educationlevels.html"><span></span>Education Levels </a></li>
+        <li class="icon five"><a href="testimonials.html"><span></span>Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="content-area sbox rcr-top "><strong> </strong>
+      <ul>
+        <li class="widget sbox ">
+          <h2>Order now</h2>
+          <ul >
+            <li>
+              <div class="step1"></div>
+            </li>
+            <li>
+              <ul class="ordernow">
+                <li>
+                  <h2> Personal Info</h2>
+                  <div class="formbox rcr">
+                    <ul>
+                      <li class="col2">
+                        <label>First Name <span>*</span></label>
+                        <input name="" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Last Name <span>*</span></label>
+                        <input name="" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Email <span>*</span></label>
+                        <input name="" type="text" class="w177">
+                      </li>
+                      <li class="col2">
+                        <label>Re-type email <span>*</span></label>
+                        <input name="" type="text" class="w177">
+                      </li>
+                      <li>
+                        <label>Country Code <span>*</span></label>
+                        <select name="" class="w498">
+                        </select>
+                      </li>
+                      <li>
+                        <label>Contact Number <span>*</span></label>
+                        <input name="" type="text" class="w89">
+                        <input name="" type="text" class="w89 ml10">
+                        <input name="" type="text" class="w182 ml10">
+                        <select name="" class="w105 ml10">
+                          <option>mobile</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        (&nbsp; country code&nbsp;)  - (   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;area code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) - (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    number                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        Valid phone number where you can be reached is required.</li>
+                    </ul>
+                  </div>
+                  <h2>Order Confirmation</h2>
+                  <div class="formbox rcr">
+                    <ul class="col-one">
+                      <li>
+                        <label>Topic : <span>*</span></label>
+                        <input name="" type="text" class="w282">
+                      </li>
+                      <li>
+                        <label>Type of Document :</label>
+                        <select name="" class="w366">
+                        </select>
+                      </li>
+                      <li>
+                        <label>Urgency :</label>
+                        <select name="" class="w234">
+                        </select>
+                      </li>
+                      <li>
+                        <label>Writer level :</label>
+                        <select name="">
+                          <option>Undergraduate</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Spacing :</label>
+                       <span class="ml20"> <span class="tab-active">Double Spaced</span> <span class="tab">Single Spaced</span></span></li>
+                      <li>
+                        <label>Number of pages/words :<span>*</span></label>
+                        <select name="" class="w366">
+                          <option>Select</option>
+                        </select>
+                      </li>
+                      <li> ( approximately 275 words per page )</li>
+                      <li>
+                        <label>Currency </label>
+                        <span class="ml20"><span class="tab-active">USD</span> <span class="tab">EUR</span> <span class="tab">GBP</span> <span class="tab">AUD</span></span></li>
+                      <li>
+                        <label> Cost per page :</label>
+                        <span class="price2">$ 21.99</span></li>
+                      <li>
+                        <label>1 Page summery of your paper :</label>
+                        <input name="" type="checkbox" value="">
+                        <span class="price">$ 26.99 </span><a href="#" class="help-icon"></a></li>
+                      <li>
+                        <label>Subject area :<span>*</span></label>
+                        <select name="" class="w366">
+                          <option>Subject </option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Total </label> <span class="price2">$ 21.99 </span><a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Academic level :</label>
+                        <select name="" class="w133">
+                          <option>Select</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Style :</label>
+                        <select name="" class="w133">
+                          <option>APA</option>
+                        </select><a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Number of sources/references :</label>
+                        <select name="" class="w88">
+                          <option>1</option>
+                        </select> <a href="#" class="help-icon"></a>
+                      </li>
+                      <li>
+                        <label>Order description : <span>*</span> <span class="note">(Type your instructions here)</span></label>
+                        <textarea name="" cols="" rows=""  class="w422 h122"></textarea>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2>Discount</h2>
+                  <div class="formbox rcr">
+                    <ul class="col-one">
+                      <li>
+                        <label>Discount code :</label>
+                        <input type="text" class="w215">
+                      </li>
+                      <li>
+                        <label>&nbsp;</label>
+                      <span class="note2">Please, be aware that membership discounts are not applied to orders under $30.00</span> </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        <input name="" type="radio" value="">
+                        <span class="input">I accept <a href="#">Terms and Conditions</a></span> </li>
+                      <li>
+                        <label>&nbsp;</label>
+                        <input name="" type="radio" value="">
+                        <span class="input"> I do not accept Terms and Conditions </span></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <input type="button" value="Confirm Your Order" class="confirmYourOrder">
+            </li>
+          </ul>
+        </li>
+        <li> </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="top sbox">
+      <ul class="links">
+        <li>
+          <ul>
+            <li><a href="#">Home</a> </li>
+            <li> <a href="educationlevels.html">Educational level</a> </li>
+            <li> <a href="#">Research paper </a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="aboutus.html">About Us </a></li>
+            <li><a href="testimonials.html">Testimonial</a> </li>
+            <li><a href="#">Term paper </a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="#">Contact Us </a></li>
+            <li><a href="ordernow.html">Order Now </a></li>
+            <li><a href="#">Dissertation</a> </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="#">Coursework </a></li>
+            <li><a href="#">Essay</a> </li>
+            <li><a href="#">Extras</a> </li>
+          </ul>
+        </li>
+        <li class="godaddy-secured"></li>
+      </ul>
+    </div>
+    <div class="bottom sbox">
+      <div class="you-can-reach"></div>
+      <div class="topnotch"></div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

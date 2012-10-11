@@ -1,0 +1,52 @@
+<?php 
+$sidenav=3;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<?php include_once("includes/header.php"); ?>
+  <div class="content mt10">
+<?php include_once("includes/sidenav.php"); ?>
+<div class="content-area sbox rcr-top ">     
+    <ul>
+      <li class="widget sbox  ">
+        <h2>Contact Us</h2>
+        <ul class="cols mt10">
+        <li class="w10">
+        <li class="w170">
+          <div class="name"><strong>Andrew</strong> Miller</div>
+          <img src="images/andrew-pic.png" width="172" height="213">
+          <div class="quote">
+            <p>"Getting help is simple at First Class Papers"</p>
+          </div>
+        </li> 
+ 
+        <li class="w30"></li>
+        <li class="w470">
+      <p>We’re here to help you every step of the way. If you have any questions, comments, or concerns, don’t hesitate to get in touch with us via email at: info@essaywriting.com or Skype at essaywriting</p>
+  <div class="phone"><span class="icon"></span><span class="txt"> Alternatively, you may <br>reach us directly at<br> this number: </span>
+   
+      <span class="no">949-204-3747 </span> <span class="dots">:</span> </div> 
+<div class="subtitle">If none of the above options strike your fancy, feel free to fill out the form below to send us your questions, comments, or concerns</div>
+<ul class="form"><li><label>Name:</label>  
+<input type="text" name="textfield" id="textfield" class="input"> 
+ </li><li>
+<label>Email:</label> 
+<input type="text" name="textfield2" id="textfield2" class="input"> 
+ </li><li>
+<label>Comment:</label> 
+<textarea name="textfield3" id="textfield3" class="textarea"></textarea>
+</li><li>
+<input type="submit" value="submit" class="submit-btn">
+</li></ul>
+        </li>
+        <li class="w10"></li>
+      </ul> 
+   
+</li>  
+    </ul>
+    </div> 
+  </div>
+<?php include_once("includes/footer.php"); ?>

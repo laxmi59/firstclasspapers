@@ -1,0 +1,106 @@
+<?php 
+$sidenav=2;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FirstClass Papers</title>
+<?php include_once("includes/header.php"); ?>
+  <div class="content mt10">
+<?php include_once("includes/sidenav.php"); ?>
+    <div class="content-area sbox rcr-top "><strong> </strong>
+      <ul>
+        <li class="widget sbox ">
+          <h2>Order now</h2>
+          <ul >
+            <li>
+              <div class="step2"></div>
+            </li>
+            <li>
+              <ul class="ordernow order-info">
+                <li>
+                  <h2> Order Info</h2>
+                  <div class="formbox rcr-bot">
+                    <ul class="">
+               
+                      <li>
+                        <label>Name <span>:</span></label><span>Eric Wagner</span>                         
+                      </li>
+                       <li>
+                        <label>Email address  <span>:</span></label><span>eric@live.com</span>                         
+                      </li>
+                       <li>
+                        <label>Country <span>:</span></label><span>USA</span>                         
+                      </li>
+                       <li>
+                        <label>Phone number <span>:</span></label><span>860-492-9067</span>                         
+                      </li>
+					  </ul>
+					  <div class="hline"></div>
+					   <ul>
+                       <li>
+                        <label>Topic <span>:</span></label><span>Lorem Ipsum Dolor</span>                         
+                      </li> 
+                      <li>
+                        <label>Type of document  <span>:</span></label><span>Essay </span>                         
+                      </li>
+                       <li>
+                        <label>Urgency <span>:</span></label><span>3Days </span>                         
+                      </li>
+                       <li>
+                        <label>Writer level <span>:</span></label><span>Undergraduate </span>                         
+                      </li>
+                       <li>
+                        <label>Spacing  <span>:</span></label><span>Double Spaced </span>                         
+                      </li>
+                       <li>
+                        <label>Number of pages <span>:</span></label><span>5 </span>                         
+                      </li>
+                       <li>
+                        <label>Currency <span>:</span></label><span>USD </span>                         
+                      </li>
+                       <li>
+                        <label>Cost per page <span>:</span></label><span>21.99 </span>                         
+                      </li>
+                       <li>
+                        <label>Subject area <span>:</span></label><span>Biology </span>                         
+                      </li>
+                       <li>
+                        <label>Academic level <span>:</span></label><span>Undergraduate </span>                         
+                      </li>
+                       <li>
+                        <label>Style  <span>:</span></label><span>APA </span>                         
+                      </li>
+                       <li>
+                        <label>Number of sources <span>:</span></label><span>3 </span>                         
+                      </li>
+                       <li>
+                        <label>Order Description <span>:</span></label><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>                         
+                      </li> 
+					   </ul>
+					   <div class="hline"></div>
+					   <ul class="">
+                      <li>
+                        <label>Discount Code <span>:</span></label><span>sj54s7872wljz </span>                         
+                      </li>
+                       <li>
+                        <label>  </label><span class="fco">You'll get 25% discount on your order. </span>                         
+                      </li>
+                      
+                      
+                    </ul>
+                  </div> 
+                </li>
+              </ul><input type="button" value="Confirm Your Order" class="edit-btn">
+              <input type="button" value="Confirm Your Order" class="proceed-to-payment-btn">
+            </li>
+          </ul>
+        </li>
+        <li> </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+<?php include_once("includes/footer.php"); ?>
